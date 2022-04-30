@@ -13,9 +13,9 @@ const initdb = async () =>
   });
 
 export const putDb = async (content) => {
-  const txtEditorDB = await openDB('txtEditor', 1);
-  const transVar = txtEditorDB.transaction('txtEditor', 'readwrite');
-  const storeVar = transVar.objectStore('txtEditor');
+  const txtEditorDB = await openDB('jate', 1);
+  const transVar = txtEditorDB.transaction('jate', 'readwrite');
+  const storeVar = transVar.objectStore('jate');
   const request = storeVar.put({ id: 1, value: content });
   
   const result = await request;
@@ -23,9 +23,9 @@ export const putDb = async (content) => {
 };
 
 export const getDb = async () => {
-  const txtEditorDB = await openDB('txtEditor', 1);
-  const transVar = txtEditorDB.transaction('txtEditor', 'readonly');
-  const storeVar = transVar.objectStore('txtEditor');
+  const txtEditorDB = await openDB('jate', 1);
+  const transVar = txtEditorDB.transaction('jate', 'readonly');
+  const storeVar = transVar.objectStore('jate');
   const request = storeVar.get(1);
   const result = await request;
   result
