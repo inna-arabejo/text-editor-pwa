@@ -2,7 +2,8 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Objectives 
+## Objectives
+Build a text editor that will run in the browser. To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database.
 
 ## Table of Contents
 1. [Usage](#usage)
@@ -46,7 +47,7 @@ In the command line, enter `'npm run start'`. As long as there are no errors, th
 ![Text Editor PWA](./public/assets/images/jate-extension.jpg)
 
 ## Technologies Used
-Express, Nodemon, PWA
+Express, IndexedDb API, PWA
 
 ## License
 This project is covered under MIT.
