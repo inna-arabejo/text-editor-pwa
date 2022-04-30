@@ -22,7 +22,6 @@ export const putDb = async (content) => {
   console.log('🚀 - data saved to the database', result.value);
 };
 
-// TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   const txtEditorDB = await openDB('txtEditor', 1);
   const transVar = txtEditorDB.transaction('txtEditor', 'readonly');
